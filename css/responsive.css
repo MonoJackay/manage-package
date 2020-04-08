@@ -1,0 +1,59 @@
+
+
+
+@media only screen and (max-width: 575.98px) {
+    .navbar {
+        padding: 20px !important;
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+
+}
+
+@media only screen and (max-width: 767.98px) {
+    .nav-btn {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar .navbar-toggler {
+        font-size: 0 !important;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .navbar {
+        padding: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+        padding: 50px !important;
+    }
+
+    #navbarNav {
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 1199.98px) {
+
+}
+
+
+
+
+
+
+
+
