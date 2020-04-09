@@ -18,7 +18,7 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 
   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="/manage-landing-page-master/css/swiper.min.css">
+  <link rel="stylesheet" href="../manage-landing-page-master/css/swiper.min.css">
 
 </head>
 <body>
@@ -149,7 +149,63 @@
             <h2 class="text-center">What they’ve said</h2>
           </div>
       </div>
-      <div class="row"></div>
+      <div class="row">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide active" data-swiper-slide-index="0" style="width: 455px; margin-right: 1px;">
+                <div class="swiper-card">
+                  <div class="swiper-imgContainer">
+                    <img class="swiper-img" src="images/avatar-anisha.png" alt="Anisha profile">
+                  </div>
+                  <h5 class="swiper-title"> Anisha Li </h5>
+                  <p class="swiper-text">“Manage has supercharged our team’s workflow. The ability to maintain
+                    visibility on larger milestones at all times keeps everyone motivated.”
+  
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide" data-swiper-slide-index="1" style="width: 455px; margin-right: 1px;">
+                <div class="swiper-card">
+                  <div class="swiper-imgContainer">
+                    <img class="swiper-img" src="images/avatar-anisha.png" alt="">
+                  </div>
+                  <h5 class="swiper-title"> Anisha Li </h5>
+                  <p class="swiper-text"> “Manage has supercharged our team’s workflow. The ability to maintain
+                    visibility on larger milestones at all times keeps everyone motivated.”
+  
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide" data-swiper-slide-index="2" style="width: 455px; margin-right: 1px;">
+                <div class="swiper-card">
+                  <div class="swiper-imgContainer">
+                    <img class="swiper-img" src="images/avatar-anisha.png" alt="">
+                  </div>
+                  <h5 class="swiper-title"> Anisha Li </h5>
+                  <p class="swiper-text"> “Manage has supercharged our team’s workflow. The ability to maintain
+                    visibility on larger milestones at all times keeps everyone motivated.”
+  
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide" data-swiper-slide-index="3" style="width: 455px; margin-right: 1px;">
+                <div class="swiper-card">
+                  <div class="swiper-imgContainer">
+                    <img class="swiper-img" src="images/avatar-anisha.png" alt="">
+                  </div>
+                  <h5 class="swiper-title"> Anisha Li </h5>
+                  <p class="swiper-text"> “Manage has supercharged our team’s workflow. The ability to maintain
+                    visibility on larger milestones at all times keeps everyone motivated.”
+  
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
       <div class="row clients-btn">
         <a class="btn" href="#" role="button">Get Started</a>
       </div>
@@ -242,20 +298,26 @@
   <script src="https://use.fontawesome.com/42a7ad639c.js"></script>
 
   <!-- Swiper JS -->
-  <script src="/manage-landing-page-master/js/swiper.min.js"></script>
+  <script src="../manage-landing-page-master/js/swiper.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
   <script src="./js/main.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      // Optional parameters
-      direction: 'vertical',
-      loop: true,
-    })
-  </script>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+
 </body>
 </html>
