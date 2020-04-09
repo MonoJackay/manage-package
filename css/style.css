@@ -104,13 +104,12 @@ body {
 }
 
 .swiper-container {
-  width: 100%;
+  width: 450px;
   height: 100%;
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -238,11 +237,47 @@ a, .nav-link {
 }
 
 .swiper-container {
-  width: 600px;
+  width: 90%;
   height: 300px;
-  background-color: #9095a7;
+  margin-bottom: 2rem;
 }
 
+.swiper-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fafafa;
+  width: 95%;
+  height: 70%;
+  position: relative;
+}
+
+.swiper-img-container {
+  border-radius: 100%;
+  position: absolute;
+  top: -46px;
+}
+
+.swiper-img {
+  width: 80px;
+  height: 80px;
+}
+
+.swiper-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #242d52;
+}
+
+.swiper-text {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: #9095a7;
+  width: 90%;
+  text-align: center;
+  line-height: 1.8;
+}
 
 /* End About Us Section */
 
@@ -370,7 +405,7 @@ footer {
 }
 
 .footer_input {
-  padding: 0.6rem 1rem;
+  padding: 1rem 2rem;
   border-radius: 35px;
   outline: none;
   font-size: 14px;
@@ -378,7 +413,7 @@ footer {
   margin-right: 0.5rem;
   flex: 1;
   width: 300px;
-  height: 40px;
+  height: 45px;
 }
 
 
