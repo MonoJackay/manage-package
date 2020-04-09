@@ -274,7 +274,7 @@ a, .nav-link {
 }
 
 .cta-content {
-  justify-content: center;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 576px) {
