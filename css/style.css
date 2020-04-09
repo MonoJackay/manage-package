@@ -1,5 +1,16 @@
 
+
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,600,700&display=swap');
+
+
 /* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 html, body {
   position: relative;
@@ -8,28 +19,30 @@ html, body {
 
 body {
   font-family: 'Be Vietnam', sans-serif;
-  background: url(../images/bg-tablet-pattern.svg) no-repeat 120% -10%;
-  margin: 0;
-  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4, h5, h6 {
   color: #242d52;
-  font-weight: 900;
 }
 
 h1 {
   font-size: 50px;
-  letter-spacing: 0.5px;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 40px;
+  font-weight: 700;
+}
+
+h6 {
+  font-weight: 600;
 }
 
 a {
   letter-spacing: 0.5px;
   font-size: 14px;
+  font-weight: 600;
 }
 
 p {
@@ -41,7 +54,7 @@ p {
   background-color: #f25f3a;
   color: #fafafa;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   padding: .7rem 2rem;
   position: relative;
   border-radius: 50px;
@@ -55,6 +68,7 @@ p {
 .btn:hover {
   box-shadow: 0px 15px 20px rgba(242, 95, 58, 0.3);
   color: #fff;
+  opacity: 0.8;
 }
 
 
@@ -70,6 +84,25 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.container-figure {
+  overflow: hidden;
+  position: relative;
+}
+
+.figure {
+  position: absolute;
+  background: url(../images/bg-tablet-pattern.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 820px;
+  height: 850px;
+  transform: rotate(-180deg);
+  top: -200px;
+  right: -140px;
+  overflow: hidden;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -102,11 +135,54 @@ body {
 
 a, .nav-link {
   color: #212A52;
-  font-weight: 700;
 }
 
 .navbar-toggler {
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .navbar {
+      padding: 20px !important;
+  }
+
+}
+
+@media only screen and (min-width: 576px) {
+
+}
+
+@media only screen and (max-width: 767.98px) {
+  .nav-btn {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .navbar-toggler {
+      font-size: 0 !important;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .navbar {
+      padding: 30px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+      padding: 50px !important;
+  }
+
+  #navbarNav {
+      justify-content: center;
+  }
 }
 
 /* End Navbar Section */
@@ -128,8 +204,8 @@ a, .nav-link {
 /* About Us Section */
 
 #about-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 
@@ -145,6 +221,10 @@ a, .nav-link {
   background-clip: padding-box;
   color:#fff;
   font-weight:600;
+}
+
+.feature {
+  padding-left: 20px;
 }
 
 .feature h6 {
@@ -163,15 +243,22 @@ a, .nav-link {
   background-color: #9095a7;
 }
 
+
 /* End About Us Section */
 
 
 
 /* Clients Section */
+
 .profile {
   padding: 70px 10px 10px;
   background-color: #fafafa;
 }
+
+.clients-btn {
+  justify-content: center;
+}
+
 /* End Client Section */
 
 
@@ -184,6 +271,30 @@ a, .nav-link {
 
 .cta-head {
   color: #fafafa !important;
+}
+
+.cta-content {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 576px) {
+  #cta-section {
+    text-align: center;
+  }
+
+  .cta-head {
+    font-size: 30px;
+  }
+
+  .cta-content {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cta-title {
+    width: 45%;
+  }
 }
 
 .cta-btn {
@@ -222,7 +333,6 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  grid-area: logo;
 }
 
 .footer-icon {
@@ -243,7 +353,9 @@ footer {
 }
 
 .footer_copyright {
-  justify-content: end;
+  display: flex;
+  width: 99%;
+  justify-content: flex-end;
 }
 
 .footer_copyright p {
@@ -264,10 +376,11 @@ footer {
   font-size: 14px;
   color: grey;
   margin-right: 0.5rem;
-  margin-bottom: 4rem;
   flex: 1;
-  max-width: 500px;
+  width: 300px;
+  height: 40px;
 }
+
 
 /* End Footer Section */
 
