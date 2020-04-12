@@ -20,6 +20,7 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="./css/swiper.min.css">
 
+  <script src="https://use.fontawesome.com/42a7ad639c.js"></script>
 </head>
 <body>
   <div class="container-figure">  
@@ -27,7 +28,7 @@
   <header>
     <nav class="navbar navbar-expand-lg sticky">
       <div class="container">
-      <a class="navbar-brand" href="#"><img src="./images/logo.svg"></a>
+      <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.svg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18"><g fill="#242D52" fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>
         </button>
@@ -56,25 +57,27 @@
   </header>
 
 
-  <div id="banner-section" class="section pb-5">
+  <div id="banner-section" class="section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-12 pb-5">
-          <h1 class="mb-5 intro">
+        <div class="col-md-6 col-sm-12">
+          <h1 class="intro-heading">
             Bring everyone
           <br>
             together to build
           <br>
             better products.
           </h1>
-          <p class="mb-5">
-            Manage makes it simple for software teams<br>to plan day-to-day 
-            tasks while keeping the<br>larger team goals in view.
+          <p class="intro-text">
+            Manage makes it simple for software teams to plan day-to-day 
+            tasks while keeping the larger team goals in view.
           </p>
-          <a class="btn" href="#" role="button">Get Started</a>
+          <div class="hero-btn">
+            <a class="btn" href="#" role="button">Get Started</a>
+          </div>
         </div>
         
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-12 hero-image-container">
           <img src="./images/illustration-intro.svg" alt="banner-img" class="img-fluid">
         </div>
       
@@ -86,8 +89,8 @@
     <div class="container about">
       <div class="row">
         <div class="col-lg-6 col-md-12">
-          <h2 class="pb-4">
-            What’s different about<br>
+          <h2 class="pb-3">
+            What’s different about
             Manage?
           </h2>
           <p>
@@ -142,6 +145,8 @@
     </div>
   </div>
 
+  <div class="figure2"></div>
+
   <div id="clients-section" class="section pb-5">
       <div class="row p-5">
           <div class="col-lg-12">
@@ -154,35 +159,35 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper" style="transform: translate3d(-1368px, 0px, 0px); transition-duration: 0ms;">
               <!-- Slides -->
-              <div class="swiper-slide" data-swiper-slide-index="0" style="width: 455px; margin-right: 1px;">
+              <div class="swiper-slide" style="width: 600px; margin-right: 1px;">
                 <div class="swiper-card">
                   <div class="swiper-img-container">
                     <img class="swiper-img" src="images/avatar-anisha.png" alt="Anisha profile">
                   </div>
                   <h5 class="swiper-title"> Anisha Li </h5>
-                  <p class="swiper-text">“Manage has supercharged our team’s workflow. The ability to maintain
+                  <p class="swiper-text">
+                    “Manage has supercharged our team’s workflow. The ability to maintain
                     visibility on larger milestones at all times keeps everyone motivated.”
-  
                   </p>
                 </div>
               </div>
-              <div class="swiper-slide" data-swiper-slide-index="1" style="width: 455px; margin-right: 1px;">
+              <div class="swiper-slide" style="width: 600px; margin-right: 1px;">
                 <div class="swiper-card">
                   <div class="swiper-img-container">
-                    <img class="swiper-img" src="images/avatar-ali.png" alt="">
+                    <img class="swiper-img" src="images/avatar-ali.png" alt="Ali profile">
                   </div>
                   <h5 class="swiper-title">Ali Bravo</h5>
                   <p class="swiper-text">
-                    “We have been able to cancel many other subscriptions since using
+                    “We have been able to cancel many subscriptions since using
                     Manage. There is no more cross-channel confusion and everyone is much
                     more focused.”
                   </p>
                 </div>
               </div>
-              <div class="swiper-slide" data-swiper-slide-index="2" style="width: 455px; margin-right: 1px;">
+              <div class="swiper-slide" style="width: 600px; margin-right: 1px;">
                 <div class="swiper-card">
                   <div class="swiper-img-container">
-                    <img class="swiper-img" src="images/avatar-richard.png" alt="">
+                    <img class="swiper-img" src="images/avatar-richard.png" alt="Richard profile">
                   </div>
                   <h5 class="swiper-title">Richard Watts</h5>
                   <p class="swiper-text">
@@ -191,10 +196,10 @@
                   </p>
                 </div>
               </div>
-              <div class="swiper-slide" data-swiper-slide-index="3" style="width: 455px; margin-right: 1px;">
+              <div class="swiper-slide" style="width: 600px; margin-right: 1px;">
                 <div class="swiper-card">
                   <div class="swiper-img-container">
-                    <img class="swiper-img" src="images/avatar-shanai.png" alt="">
+                    <img class="swiper-img" src="images/avatar-shanai.png" alt="Shanai profile">
                   </div>
                   <h5 class="swiper-title">Shanai Gough</h5>
                   <p class="swiper-text">
@@ -216,7 +221,7 @@
 
 
 
-  <div id="cta-section">
+  <div id="cta-section" class="cta-section">
     <div class="container">
       <div class="row cta-content">
         <div class="cta-title">
